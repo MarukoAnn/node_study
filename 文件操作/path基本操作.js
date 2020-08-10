@@ -43,4 +43,21 @@ console.log(obj.base);
 
 
 // 判断是否我绝对路径
-console.log(path.isAbsolute('D:\\\\an_project\\\\web_project\\\\node_project\\\\node_study\\\\文件操作'));
+// console.log(path.isAbsolute('D:\\\\an_project\\\\web_project\\\\node_project\\\\node_study\\\\文件操作'));
+
+// 拼接路径（.. 标识上层路径，.表示当前路劲），在连接路劲的时候会格式化路劲
+// console.log(path.join('/foo', 'bar', 'baz/asdf', 'quux', './'));
+
+
+// console.log(path.normalize('/foo/bar//baz/asdf/quux/..'));
+
+// 计算相对路劲
+console.log(path.resolve('/data/orandea/test/aaa', '/data/orandea/impl/bbb'));
+console.log(path.resolve('C:\\orandea\\test\\aaa', 'C:\\orandea\\impl\\bbb'));
+
+// 解析路劲
+console.log(path.resolve('目录1', '目录2/目录3/', '../目录4/文件.gif'));
+
+// 两个特殊属性
+console.log(path.delimiter); // 表示路劲分隔符 (window 是 \, Linux 是 /)
+console.log(path.sep); // 环境变量分隔符 （windows中使用，linux中使用）

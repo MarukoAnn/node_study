@@ -1,0 +1,147 @@
+<html>
+  <head>
+	  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>i5ting_ztree_toc:README</title>
+		<link href="toc/style/github-bf51422f4bb36427d391e4b75a1daa083c2d840e.css" media="all" rel="stylesheet" type="text/css"/>
+		<link href="toc/style/github2-d731afd4f624c99a4b19ad69f3083cd6d02b81d5.css" media="all" rel="stylesheet" type="text/css"/>
+		<link href="toc/css/zTreeStyle/zTreeStyle.css" media="all" rel="stylesheet" type="text/css"/>
+	  <style>
+		pre {
+		    counter-reset: line-numbering;
+		    border: solid 1px #d9d9d9;
+		    border-radius: 0;
+		    background: #fff;
+		    padding: 0;
+		    line-height: 23px;
+		    margin-bottom: 30px;
+		    white-space: pre;
+		    overflow-x: auto;
+		    word-break: inherit;
+		    word-wrap: inherit;
+		}
+
+		pre a::before {
+		  content: counter(line-numbering);
+		  counter-increment: line-numbering;
+		  padding-right: 1em; /* space after numbers */
+		  width: 25px;
+		  text-align: right;
+		  opacity: 0.7;
+		  display: inline-block;
+		  color: #aaa;
+		  background: #eee;
+		  margin-right: 16px;
+		  padding: 2px 10px;
+		  font-size: 13px;
+		  -webkit-touch-callout: none;
+		  -webkit-user-select: none;
+		  -khtml-user-select: none;
+		  -moz-user-select: none;
+		  -ms-user-select: none;
+		  user-select: none;
+		}
+
+		pre a:first-of-type::before {
+		  padding-top: 10px;
+		}
+
+		pre a:last-of-type::before {
+		  padding-bottom: 10px;
+		}
+
+		pre a:only-of-type::before {
+		  padding: 10px;
+		}
+
+		.highlight { background-color: #ffffcc } /* RIGHT */
+		</style>
+  </head>
+  <body>
+	  <div>
+				<div style='width:25%;'>
+						<ul id="tree" class="ztree" style='width:100%'>
+
+						</ul>
+				</div>
+        <div id='readme' style='width:70%;margin-left:20%;'>
+          	<article class='markdown-body'>
+            	<p>1、javascript 本质上是什么？ 就是一门编程语言，解释执行的</p>
+<p>2、浏览器的内核包括两部分核心：</p>
+<ul>
+<li>DOM渲染引擎</li>
+<li>JS解析器</li>
+</ul>
+<p>3、js 运行在浏览器中的内核中的js引擎内部</p>
+<p>4、是否js只能运行在浏览器中？ 不是的</p>
+<p>5、实现动态网站的技术：java、php、.net、python、nodejs....</p>
+<p>6、基于Node.js和第三方工具 electron 可以开发桌面应用程序</p>
+<p>7、REPL read-eval-print-loop  读取代码-执行-打印结果-循环结果</p>
+<p>8、在REPL环境中，_表示最后一次执行结果 .exit 可以退出REPL环境</p>
+<h2 id="buffer-">Buffer 基本操作</h2>
+<blockquote>
+<p>Buffer 对象是Node 处理二进制数据的一个接口。 它是Node原生提供的全局对象
+可以直接使用，不需要require(&#39;buffer&#39;)</p>
+</blockquote>
+<ul>
+<li>实例化<ul>
+<li>Buffer.from(array)</li>
+<li>Buffer.from(string)</li>
+<li>Buffer.alloc(size)</li>
+</ul>
+</li>
+<li>功能方法<ul>
+<li>Buffer.isEncoding() 判断是否支持该编码</li>
+<li>Buffer.isBuffer() 判断是否为Buffer</li>
+<li>Buffer.byteLength() 返回指定编码的字节长度，默认utf8</li>
+<li>Buffer.concat() 将一组Buffer 对象合并为一个Buffer对象</li>
+</ul>
+</li>
+<li>实例方法<ul>
+<li>write() 向Buffer 里面写入内容</li>
+<li>slice() 截取Buffer 对象</li>
+<li>toString() 把Buffer对象转成string字符串</li>
+<li>toJson() 把Buffer对象转成Json</li>
+</ul>
+</li>
+</ul>
+<h3 id="npm-">npm 常用命令</h3>
+<p>1、全局安装 -g<br>2、本地安装
+npm常用安装命令：  </p>
+<ul>
+<li>安装包(不输入版本号默然安装最新的)<ul>
+<li>npm install -g 包名称(全局安装)</li>
+<li>npm install 包名称(局部安装)</li>
+</ul>
+</li>
+<li>安装包的时候可以指定版本<ul>
+<li>npm install -g 包名称@版本号</li>
+</ul>
+</li>
+<li>卸载包<ul>
+<li>npm uninstall -g 包名</li>
+</ul>
+</li>
+<li>更新包</li>
+</ul>
+
+          	</article>
+        </div>
+		</div>
+  </body>
+</html>
+<script type="text/javascript" src="toc/js/jquery-1.4.4.min.js"></script>
+<script type="text/javascript" src="toc/js/jquery.ztree.all-3.5.min.js"></script>
+<script type="text/javascript" src="toc/js/ztree_toc.js"></script>
+<script type="text/javascript" src="toc_conf.js"></script>
+
+<SCRIPT type="text/javascript" >
+<!--
+$(document).ready(function(){
+    var css_conf = eval(markdown_panel_style);
+    $('#readme').css(css_conf)
+    
+    var conf = eval(jquery_ztree_toc_opts);
+		$('#tree').ztree_toc(conf);
+});
+//-->
+</SCRIPT>
