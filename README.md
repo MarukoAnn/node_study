@@ -84,3 +84,42 @@ npm常用安装命令：
 9、执行包
 - npm run
 - rarn run
+
+
+## 自定义包
+
+1、包的规范
+- package.json 必须在包的项目顶层目录下
+- 二进制文件应该在bin目录下
+- javascript 代码应该在lib目录下
+- 文档应该在doc目录下
+- 但愿测试应该在test目录下
+
+2、package.json 字段分析
+- name：包的名称,必须是唯一的，由小写英文字母、数字和下划线组成，不能包含空格
+- description: 包的摘要说明
+- version: 符合语义化版本的识别规范的版本字符串
+- keywords: 关键字数组，通常用于搜索
+- maintainers：维护者数组，每个元素要包含namme、email(可选)、web(可选)字段
+- contributors：贡献者数组，格式与maintainers相同，包的作者应该是贡献者数组的第一个元素
+- bugs：提交bug的地址，可以是网站或者电子邮件地址
+- licenses：许可证数组，每个元素要包含type(许可证名称)和url(链接许可证文本的地址)字段
+- respostories: 仓库托管地址数组，每个元素包含type(仓库类型，如git)、url(仓库的地址)和path(相对于仓库的路径，可选)字段
+- dependcies: 包的依赖，一个关联数组，由包的名称和版本号组成
+
+
+## node js总结
+1、Node.js 不需要依赖于第三方应用软件(Apache), 可以基于api自己实现
+
+2、实现静态资源服务器
+
+3、路由处理
+
+4、动态网站
+
+5、模板引擎
+
+6、get和post参数传参和处理
+
+web 开发框架 express
+
