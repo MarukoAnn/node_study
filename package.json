@@ -2,7 +2,7 @@
   "name": "node_study",
   "version": "1.0.0",
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.18.2",
     "i5ting_toc": "^1.1.5",
     "inquirer": "^7.3.3",
     "minimist": "^1.2.5",
